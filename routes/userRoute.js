@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const { updateProfile, deleteAccount } = require("../controllers/userController");
-const { protect } = require("../middleware/authMiddleware"); // apna existing auth middleware
-const upload = require("../middleware/upload");
+const { updateProfile, deleteAccount } = require("../controllers/userController.js");
+const { protect } = require("../middleware/authMiddleware.js"); // apna existing auth middleware
+const upload = require("../middleware/upload.js");
 
 router.use(protect);
 

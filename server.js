@@ -55,9 +55,9 @@ const http = require("http");
 const connectDB = require("./config/db");
 const { initSocket } = require("./config/socket");
 
-const authRoutes = require("./routes/authRoutes");
-const taskRoutes = require("./routes/taskRoutes");
-const userRoutes = require("./routes/userRoute");
+const authRoutes = require("./routes/authRoutes.js");
+const taskRoutes = require("./routes/taskRoutes.js");
+const userRoutes = require("./routes/userRoute.js");
 
 const app = express();
 
